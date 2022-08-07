@@ -3,7 +3,6 @@
 
 #include "Walnut/Image.h"
 #include "Walnut/Timer.h"
-
 #include "Renderer.h"
 
 using namespace Walnut;
@@ -31,7 +30,7 @@ public:
 		if(image)
 			ImGui::Image(image->GetDescriptorSet(), { (float)image->GetWidth(), (float)image->GetHeight() },
 				ImVec2(0, 1), ImVec2(1, 0));
-	
+
 		ImGui::End();	
 		ImGui::PopStyleVar();
 
@@ -47,8 +46,6 @@ public:
 
 		m_ElapsedTime = timer.ElapsedMillis();
 	}
-
-	
 
 private : 
 
